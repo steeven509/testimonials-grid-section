@@ -12,13 +12,13 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/solution.png)
 
 
 ### Links
 
 - Solution URL: [Github code source](https://github.com/steeven509/testimonials-grid-section)
-- Live Site URL: [Netlify website](https://your-live-site-url.com)
+- Live Site URL: [Netlify website](https://testimonials-grid-challenge00.netlify.app/)
 
 ## My process
 
@@ -26,10 +26,9 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 - Semantic HTML5 markup
 - CSS custom properties
-- CSS Grid
-- FlexBox
+- Grid
+- Flex
 - SASS
 
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@steeven509](https://www.frontendmentor.io/profile/steeven509)
