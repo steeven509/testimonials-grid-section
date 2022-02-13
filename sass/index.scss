@@ -59,21 +59,19 @@ body{
     font-weight: $font-weight-medium;
     opacity: 50%;
 }
-
 .grid{
     display: grid;
-    gap: 24px;
+    gap: 20px;
 }
 
 //Section Testimonials 
-
 .testimonials__section{
     max-width: 75%;
     margin: 1rem auto;
-    grid-auto-rows: max-content;
     grid-template-columns: repeat(4, 1fr);
     color: $white-color;
-
+    
+    //Card global class
     .card{
         padding: 20px;
         border-radius: 15px;
@@ -90,11 +88,21 @@ body{
             }
         }
     }
+
+    .card1,
+    .card5{
+        grid-column: span 2;
+    }
     .card1{
         position: relative;
         background-color: $moderate-violet;
         z-index: 2;
-        grid-column: span 2;
+        .card__profil{
+            img{
+                border: 2px solid $light-grayish;
+            }
+        }
+         
     }
     .card__1-quote{
         position: absolute;
@@ -109,13 +117,44 @@ body{
     .card4{
         color: $very-dark-blackish-blue;
         background-color: $light-grayish-blue;
+        .section__subtitle{
+            opacity: 100%;
+        }
+        img{
+            border: 2px solid $very-dark-grayish-blue;
+        }
     }
     .card3{
         grid-row: span 2;
     }
     .card5{
-        grid-column: span 2;
         background-color: $very-dark-blackish-blue;
+
+        img{
+            border: 2px solid $moderate-violet;
+        }
     }
 
+}
+
+
+// RESPONSIVE
+@media screen and (max-width: 1201px) {
+    .card2,
+    .card4{
+        grid-column: span 2; 
+    }
+    .card3{
+        grid-row:  span 1;
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width: 801px) {
+   .testimonials__section{
+       margin-top: 4rem;
+       display: flex;
+       flex-direction: column;
+   }
 }

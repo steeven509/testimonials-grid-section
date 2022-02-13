@@ -55,14 +55,12 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  gap: 24px;
+  gap: 20px;
 }
 
 .testimonials__section {
   max-width: 75%;
   margin: 1rem auto;
-  grid-auto-rows: -webkit-max-content;
-  grid-auto-rows: max-content;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   color: white;
@@ -92,11 +90,19 @@ body {
   margin-left: 20px;
 }
 
+.testimonials__section .card1,
+.testimonials__section .card5 {
+  grid-column: span 2;
+}
+
 .testimonials__section .card1 {
   position: relative;
   background-color: #7541c8;
   z-index: 2;
-  grid-column: span 2;
+}
+
+.testimonials__section .card1 .card__profil img {
+  border: 2px solid #cfcfcf;
 }
 
 .testimonials__section .card__1-quote {
@@ -116,12 +122,49 @@ body {
   background-color: #ecf2f8;
 }
 
+.testimonials__section .card3 .section__subtitle,
+.testimonials__section .card4 .section__subtitle {
+  opacity: 100%;
+}
+
+.testimonials__section .card3 img,
+.testimonials__section .card4 img {
+  border: 2px solid #48556a;
+}
+
 .testimonials__section .card3 {
   grid-row: span 2;
 }
 
 .testimonials__section .card5 {
-  grid-column: span 2;
   background-color: #19212e;
+}
+
+.testimonials__section .card5 img {
+  border: 2px solid #7541c8;
+}
+
+@media screen and (max-width: 1201px) {
+  .card2,
+  .card4 {
+    grid-column: span 2;
+  }
+  .card3 {
+    grid-row: span 1;
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .testimonials__section {
+    margin-top: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=index.css.map */
